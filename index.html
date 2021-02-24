@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>What's Next? - Add Show Form</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <header class='main-section'>
+    <h1>What's Next?</h1>
+  </header>
+
+  <main class='main-section'>
+
+    <section>
+      <h2>Add a show to your Watch List</h2>
+
+      <form id='add-show-form'>
+        <div class='add-show-form-section'>
+          <label for='title'>Title</label><br />
+          <input type="text" name='title' required>
+        </div>
+        <div class='add-show-form-section'>
+          <label for='service'>Streaming Service</label><br />
+          <select name='service' id='service'>
+            <option value='Netflix'>Netflix</option>
+            <option value='Hulu'>Hulu</option>
+            <option value='HBOMax'>HBOMax</option>
+            <option value='Amazon Prime'>Amazon Prime</option>
+            <option value='other'>Other</option>
+            <option value='dont-know'>Don't know</option>
+          </select>
+        </div>
+        <div class='add-show-form-section'>
+          <label for='genre'>Genre</label><br />
+          <select name='genre' id='genre'>
+            <option value='Drama'>Drama</option>
+            <option value='Comedy'>Comedy</option>
+            <option value='Documentary'>Documentary</option>
+            <option value='SciFi'>SciFi</option>
+            <option value='Fantasy'>Fantasy</option>
+            <option value='Crime'>Crime</option>
+            <option value='other'>Other</option>
+          </select>
+        </div>
+        <div class='add-show-form-section'>
+          <label for='priority'>Priority</label><br />
+          <select name='priority' id='priority'>
+            <option value='top'>Top</option>
+            <option value='bottom'>Bottom</option>
+            <option value='middle'>Middle</option>
+          </select>
+        </div>
+        <div class='add-show-form-section'>
+          <button type='submit'>Add show</button>
+        </div>
+      </form>
+
+    </section>
+
+  </main>
+
+  <nav class='main-section'>
+    <div class='nav-button'>
+      WATCHED
+    </div>
+    <div class='nav-button'>
+      TO-WATCH
+    </div>
+    <div class='nav-button'>
+      FRIENDS
+    </div>
+  </nav>
+  
+</body>
+
+</html>
